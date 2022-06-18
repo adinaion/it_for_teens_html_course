@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatiul cosmic</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("1.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-shadow: 0 0 10px rgb(23, 255, 2),
+                0 0 10px rgb(23, 255, 2),
+                0 0 10px rgb(23, 255, 2);
+            font-family: cursive;
+            color: white;
+            text-align: justify;
+            font-size: 130%;
+        }
+
+        .casetaform {
+            padding: 1%;
+            background-color: #2271b1;
+            width: 50%;
+            margin: auto;
+            margin-top: 3%;
+            align-items: center;
+            border-style: groove;
+            border-color: rgb(34, 226, 17);
+            border-radius: 5%;
+        }
+
+        header {
+            font-size: 90%;
+            text-align: center;
+            font-family: cursive;
+            color: white;
+            text-shadow: 0 0 10px rgb(2, 253, 15),
+                0 0 10px rgb(2, 253, 15),
+                0 0 10px rgb(2, 253, 15),
+                0 0 10px rgb(2, 253, 15);
+            border-radius:15%;
+            padding:1%;
+        }
+        .formular {
+            padding:5% 10%;
+        }
+
+        p {
+            font-size:120%;
+            text-shadow: 0 0 10px white,
+                0 0 10px white,
+                0 0 10px black,
+                0 0 10px black;
+        }
+        .subtext{
+            text-shadow: 0 0 10px rgb(252, 3, 3),
+                0 0 10px rgb(252, 3, 3),
+                0 0 10px rgb(252, 3, 3),
+                0 0 10px white;
+            font-size:100%;
+        }
+        img {
+            width:45%;
+        }
+        .caseta{
+            display:block;
+            width:100%;
+            padding:2%;
+            background-color:rgb(41, 180, 214);
+            color:aliceblue;
+        }
+        option {
+            font-family:cursive;
+            text-shadow:0 0 10px black;
+            font-size:medium;
+        }
+        #send{
+            font-size:120%;
+            font-family:cursive;
+            background-color:rgb(173, 104, 238);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="casetaform">
+        <header class="header">
+            <h1 class="title">Cosmic space form</h1>
+            <p id="description" class="subtext">Thank you for stealing a moment from your precious time to complete this form.=)</p>
+        </header>
+        <form action="" method="get" class="formular">
+            <label for="firstName">Name:</label>
+            <br>
+            <input type="text" class="caseta" name="firstName" id="firstName" placeholder="Please enter your name">
+            <br>
+            <label for="emailAdress">Email:</label>
+            <br>
+            <input type="text" class="caseta" name="emailAdress" id="emailAdress" placeholder="name@gmail.com">
+            <br>
+            <label for="age">Age:</label>
+            <br>
+            <input type="text" class="caseta" name="age" id="age" placeholder="Please enter your age">
+            <br>
+            <textarea class="caseta" name="opinion" id="opinion" rows="4" cols="30"
+                placeholder="Write here your opinion about the existence of aliens.(Only if you want to)"></textarea>
+            <br>
+            <br>
+            <label for="pass">Now I really wanna know one of your secrets...=)</label>
+            <br>
+            <input type="password" class="caseta" name="pass" id="pass" placeholder="Enter ig password pls">
+            <br>
+            <p class="subtext">Just kidding...don't panic=)) I don't really need your password but maybe I will learn how to get it in
+                the nearest future. ;)</p>
+            <br>
+            <label for="celestial_bodies">Select 3 planets and 2 other celestial bodies which you like:</label>
+            <br>
+            <select class="caseta" name="celestial_bodies" id="celestial_bodies" multiple size="5">
+                <optgroup label="planets">
+                    <option value="mercury">Mercury</option>
+                    <option value="venus">Venus</option>
+                    <option value="earth">Earth</option>
+                    <option value="mars">Mars</option>
+                    <option value="jupiter">Jupiter</option>
+                    <option value="saturn">Saturn</option>
+                    <option value="uranus">Uranus</option>
+                    <option value="neptune">Neptune</option>
+                    <option value="pluto">Pluto</option>
+                </optgroup>
+                <optgroup label="other celestial bodies">
+                    <option value="sun">Sun</option>
+                    <option value="moon">Moon</option>
+                    <option value="asteroid">Asteroid</option>
+                    <option value="stars">Stars</option>
+                    <option value="satellites">Satellites</option>
+                    <option value="meteorids">Meteorids</option>
+                    <option value="comets">Comets</option>
+                </optgroup>
+            </select>
+            <p class="subtext">Let's see your knowledge about cosmic space=)</p>
+            <p>What are celestial bodies?</p>
+            <input type="radio" id="objects" name="celestial_bodies" value="Objects">
+            <label for="objects">Objects we see in the sky</label>
+            <br>
+            <input type="radio" id="angels" name="celestial_bodies" value="Angels">
+            <label for="angels">Angels</label>
+            <br>
+            <input type="radio" id="souls" name="celestial_bodies" value="Souls">
+            <label for="souls">Souls</label>
+            <br>
+            <input type="radio" id="all" name="celestial_bodies" value="All">
+            <label for="all">All the answers are correct</label>
+            <p>What do we call people who travel in space?</p>
+            <input type="radio" id="aliens" name="people" value="Aliens">
+            <label for="aliens">Aliens</label>
+            <br>
+            <input type="radio" id="cooks" name="people" value="Cooks">
+            <label for="cooks">Cooks</label>
+            <br>
+            <input type="radio" id="astronauts" name="people" value="Astronauts">
+            <label for="astronauts">Astronauts</label>
+            <br>
+            <input type="radio" id="cockroaches" name="people" value="Cockroaches">
+            <label for="cockroaches">Cockroaches</label>
+            <br>
+            <input type="radio" id="all_of_them" name="people" value="All_of_them">
+            <label for="all_of_them">All of them</label>
+            <p>Which one is the 5th planet from the sun?</p>
+            <input type="radio" id="earth" name="5th_planet" value="Earth">
+            <label for="earth">Earth</label>
+            <br>
+            <input type="radio" id="jupiter" name="5th_planet" value="Jupiter">
+            <label for="jupiter">Jupiter</label>
+            <br>
+            <input type="radio" id="mars" name="5th_planet" value="Mars">
+            <label for="mars">Mars</label>
+            <br>
+            <input type="radio" id="mickey_mouse" name="5th_planet" value="Mickey_Mouse's_dog">
+            <label for="mickey_mouse">Mickey Mouse's dog</label>
+            <br>
+            <input type="radio" id="none" name="5th_planet" value="None">
+            <label for="none">None of them</label>
+            <p>What do we use to travel in space?</p>
+            <input type="radio" id="car" name="travel" value="Car">
+            <label for="car">Car</label>
+            <br>
+            <input type="radio" id="train" name="travel" value="Train">
+            <label for="train">Train</label>
+            <br>
+            <input type="radio" id="dragon" name="travel" value="Dragon">
+            <label for="dragon">Dragon</label>
+            <br>
+            <input type="radio" id="rocket" name="travel" value="Rocket">
+            <label for="rocket">Rocket</label>
+            <br>
+            <p>What do you think this alien can do?</p>
+            <div>
+                <img src="2.jpg" alt="alienImage">
+            </div>
+            <div>
+                <input type="checkbox" id="cake" name="alien_do" value="cake_selected">
+                <label for="cake">Baking a cake</label>
+            </div>
+            <div>
+                <input type="checkbox" id="clean" name="alien_do" value="clean_selected">
+                <label for="clean">Cleaning my room</label>
+            </div>
+            <div>
+                <input type="checkbox" id="world" name="alien_do" value="world_selected">
+                <label for="world">Take over the world</label>
+            </div>
+            <div>
+                <input type="checkbox" id="karaoke" name="alien_do" value="karaoke_selected">
+                <label for="karaoke">Karaoke</label>
+            </div>
+            <div>
+                <input type="checkbox" id="dance" name="alien_do" value="dance_selected">
+                <label for="dance">Dancing tango</label>
+            </div>
+            <div>
+                <input type="checkbox" id="spaceship" name="alien_do" value="spaceship_selected">
+                <label for="spaceship">Taking me to school with his spaceship</label>
+            </div>
+            <br>
+            <textarea class="caseta" name="alien_actions" id="alien_actions" rows="5" cols="30"
+                placeholder="What other things do you think this alien can do? Write them here."></textarea>
+            <br>
+            <input class="caseta" id="send" type="submit" name="submitButton" value="Send form">
+        </form>
+    </div>
+</body>
+
+</html>
